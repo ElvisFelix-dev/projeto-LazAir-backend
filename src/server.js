@@ -14,7 +14,7 @@ mongoose.connect("mongodb+srv://devhouse:devhouse@devhouse.zxkf1.mongodb.net/dev
 
 app.use(cors())
 app.use(express.json())
-app.use('/files', express.static(path.resolve(__dirname, '..', 'avatar')));
+app.use('/files', express.static(path.resolve(__dirname, '..', 'imagespot')));
 app.use(routes)
 
 app.listen(3333, () => {
